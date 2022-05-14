@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    margin:0;
+}
+
+/* Custom properties */
+:root{
+    --ubuntu : "Ubuntu", monospace;
+    --def : 400;
+    --bold : 700;
+    --italic : italic;
+    --fs-h1 : 3rem;
+    --fs-li : 1.25rem;
+    --fs-p : 1rem;
+}
+
+@media(min-width:800px){
+    :root{
+        --fs-h1 : 4.5rem;
+        --fs-li : 1.5rem;
+        --fs-p : 1.15rem;
+    }
+
+}
