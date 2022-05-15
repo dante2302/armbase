@@ -16,14 +16,14 @@ ul{list-style: none;}
     --def : 400;
     --bold : 700;
     --italic : italic;
-    --fs-h1 : 3rem;
+    --fs-h1 : 2.7rem;
     --fs-link : 1.40rem;
     --fs-p : 1.1rem;
 }
 
 @media(min-width:800px){
     :root{
-        --fs-h1 : 4rem;
+        --fs-h1 : 3.7rem;
         --fs-link : 1.7rem;
         --fs-p : 1.25rem;
     }
@@ -35,7 +35,7 @@ ul{list-style: none;}
 body{
     font-family: var(--ubuntu);
     margin:0;
-    width:100%;
+    min-width:fit-content;
     color:var(--black-clr);
 }
 
@@ -64,17 +64,30 @@ header{
     font-weight:var(--bold);
     color:white;
 }
-.logo{
+.logo1{        
     width:20rem;
     margin:2em;
 }
-a,.sign-up{
+a,.sign-up,.cart{
     transition: all .2s ease-in;
     padding-inline:.5em;
     padding-block:.3em;
     border-radius: 10px;
 }
-
+.cart,.account{
+    display:none;
+}
+.account.active{
+    width:3rem;
+}
+.cart.active{
+    width:3rem;
+    background:var(--red-clr);
+    transition: all 0.2s ease-in-out
+}
+.cart.active:hover{
+    background-color: var(--white-clr);
+}
 a:hover,.sign-up:hover{
     background-color:var(--red-clr);
     color:var(--black-clr);
@@ -93,7 +106,8 @@ a:hover,.sign-up:hover{
 
 .bar{
     width:2em;
-    height:3px;
+    height:2px;
+    border-radius:2px;
     display:block;
     margin:5px auto;
     transition: all 0.3s ease-in;
@@ -105,7 +119,7 @@ a:hover,.sign-up:hover{
 
 @media(max-width:768px){
     .hamburger{
-        display:block
+        display:block;
     }
     .hamburger.active .bar:nth-child(2){
         opacity:0
@@ -129,4 +143,34 @@ a:hover,.sign-up:hover{
     .nav-ul.active{
         left:0;
     }
+    .logo1{
+        width:10rem;
+        margin:0.5em;
+    }
+}
+
+/* Recent Section */
+.recent-section{
+    background:var(--red-clr);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.carousel-wrap{
+    margin:1em;
+    height:70px;
+    width:300px;
+    background:white;
+}
+.recent-heading{
+    color:black;
+    text-align: center;
+}
+.recent-heading:after{
+    content:"";
+    width:
+}
+.footer-img{
+        display:none;
 }
