@@ -56,15 +56,16 @@ nav,ul{
     justify-content:center;
 }
 header{
-    width:100%;
-    background-color: var(--black-clr);
+    width:inherit;
+    background:linear-gradient(45deg,black,var(--black-clr),rgb(49, 49, 49),var(--grey-clr))
 }
 .sign-up{
     font-size: var(--fs-link);
     font-weight:var(--bold);
     color:white;
 }
-.logo1{        
+.logo{        
+    cursor:pointer;
     width:20rem;
     margin:2em;
 }
@@ -144,32 +145,58 @@ a:hover,.sign-up:hover{
         left:0;
     }
     .logo1{
-        width:10rem;
+        width:9rem;
         margin:0.5em;
     }
 }
 
 /* Recent Section */
 .recent-section{
-    background:var(--red-clr);
+    background:url(asd213.jpg);
+    background-size:fit-content;
+    text-align:center;
+    position:relative;
+    margin-top:1em;
+    width:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
 }
+@media(min-width:800px){
+    .carousel-outer-wrap{
+        margin:2em;
+        height:30rem;
+        width:70rem;
+        background:linear-gradient(to right,rgb(0,0,0),rgb(29, 29, 29),rgb(76, 76, 76));
+    }
+    .carousel-inner-wrap{
+        height:29rem;
+        width:69rem;
+        background:linear-gradient(to right, rgba(255, 255, 255, 0.938),rgb(217, 217, 217),rgb(209, 208, 208));
+    }
+    .carousel{
+        background:red;
+        height:28rem;
+        width:68rem;
+    }
+}
 .carousel-wrap{
-    margin:1em;
-    height:70px;
-    width:300px;
-    background:white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
-.recent-heading{
-    color:black;
-    text-align: center;
+
+.recent-heading::after{
+    content: "";
+    background-color: black;
+    height: 5px;
+    display: block;
+    margin-top:.4em;
 }
-.recent-heading:after{
-    content:"";
-    width:
+.recent-background{
+min-height:100%;
+width:100%
 }
 .footer-img{
         display:none;
