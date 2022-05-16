@@ -9,7 +9,7 @@ ul{list-style: none;}
 /* Custom properties */
 :root{
     --black-clr:rgb(0, 0, 0);
-    --orange-clr : rgb(229, 121, 5);
+    --orange-clr : rgb(229, 98, 5);
     --grey-clr:rgb(79,79,79);
     --white-clr:white;
     --red-clr: rgb(156, 29, 20);
