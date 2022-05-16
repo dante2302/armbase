@@ -72,17 +72,17 @@ header{
 }
 a,.sign-up,.cart{
     transition: all .2s ease-in;
-    padding-inline:.5em;
-    padding-block:.3em;
+    padding:.3em .5em;
     border-radius: 10px;
 }
-/* .cart,.account{
-    display:none;
-} */
-.account{
-    width:3rem;
+.cart,.account{
+ display:none;
+}   
+.account:active{
+    width:3.3rem;
+    margin:1rem;
 }
-.cart.active{
+.cart{
     width:3rem;
     background:var(--red-clr);
     transition: all 0.2s ease-in-out
@@ -113,7 +113,7 @@ a:hover,.sign-up:hover{
 
 .bar{
     width:2em;
-    height:2px;
+    height:3.2px;
     border-radius:2px;
     display:block;
     margin:5px auto;
