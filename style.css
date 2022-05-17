@@ -64,11 +64,13 @@ header{
     font-size: var(--fs-link);
     font-weight:var(--bold);
     color:white;
-    border:3px solid var(--orange-clr);
+    border-bottom:3px solid var(--orange-clr);
     border-radius:10px;
-    border-top:var(--orange-clr);
-    border-left:var(--orange-clr);
-    border-right:var(--orange-clr);
+}
+.sign-up:hover{
+    border : 3px solid var(--orange-clr);
+    padding:calc(.3em - 3px) calc(.5em - 3px);
+    color:var(--orange-clr);
 }
 .logo{        
     cursor:pointer;
@@ -77,7 +79,7 @@ header{
     transition: all .2s ease-in;
 }
 .logo:hover{
-    transform:scale(1.1);
+    transform:scale(1.05);
 }
 a,.sign-up,.cart{
     transition: all .2s ease-in;
@@ -98,7 +100,7 @@ a,.sign-up,.cart{
 .cart.active:hover{
     background-color: var(--white-clr);
 }
-a:hover,.sign-up:hover{
+a:hover{
     transform:scale(1.005);
     border-radius:10px;
     border: 3px solid;
@@ -176,6 +178,7 @@ a:hover,.sign-up:hover{
     justify-content:center;
     align-items:center;
 }
+
 @media(min-width:800px){
     .carousel-outer-wrap{
         margin:2em;
@@ -209,3 +212,28 @@ width:100%
 .footer-img{
         display:none;
 }
+.container {
+    width: 80%;
+    /* margin:20px auto; */
+  }
+  .carousel {
+    border: 2px solid #416be4;
+    height: 400px;
+    /* overflow: hidden; */
+    position: relative;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 4px rgb(0, 0, 0), 0 4px 10px rgb(0, 0, 0);
+  }
+  .slider {
+    border:1px solid red;
+    display: flex;
+    height: 100%;
+    width: 400%;
+  }
+  .slider>div{
+    flex-basis:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
