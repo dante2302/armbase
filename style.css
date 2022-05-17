@@ -17,7 +17,7 @@ ul{list-style: none;}
     --def : 400;
     --bold : 700;
     --italic : italic;
-    --fs-h1 : 2.7rem;
+    --fs-h1 : 2.2rem;
     --fs-link : 1.40rem;
     --fs-p : 1.1rem;
 }
@@ -49,7 +49,11 @@ a {
 }
 p,.footer-link{font-size: var(--fs-p)}
 
+
+
 /* Header & Nav */
+
+
 
 nav,ul{
     display:flex;
@@ -169,10 +173,16 @@ a:hover{
     }
 }
 
+
+
+
 /* Recent Section */
+
+
+
 .recent-section{
     background:url(arm.jpg);
-    background-color: rgba(0, 0, 0, 0.509);
+    background-color: rgba(0, 0, 0, 0.675);
     background-blend-mode: multiply;
     background-size:fit-content;
     background-position: center;
@@ -197,11 +207,6 @@ a:hover{
         width:69rem;
         background:linear-gradient(to right, rgba(255, 255, 255, 0.938),rgb(217, 217, 217),rgb(209, 208, 208));
     }
-    .carousel{
-        background:red;
-        height:28rem;
-        width:68rem;
-    }
 }
 .carousel-wrap{
     display:flex;
@@ -210,6 +215,8 @@ a:hover{
 }
 .recent-heading{
     color:white;
+    line-height:1.5em;
+    margin:.5em auto;
 }
 .recent-background{
 min-height:100%;
@@ -219,11 +226,9 @@ width:100%
         display:none;
 }
 .container {
-    width: 80%;
-    /* margin:20px auto; */
-  }
+    width:80%;
+}
 .carousel {
-    border: 2px solid #416be4;
     height: 400px;
     overflow: hidden;
     position: relative;
@@ -245,9 +250,11 @@ width:100%
 
 }
 .arrow{
+    font-size:50px;
     position:absolute;
     cursor:pointer;
     top:50%;
+    transform:translateY(-50%);
 }
 .left{
     left:10px;
