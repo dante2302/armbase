@@ -61,6 +61,7 @@ header{
     background:var(--black-clr)
 }
 .sign-up{
+    overflow:auto;
     font-size: var(--fs-link);
     font-weight:var(--bold);
     color:white;
@@ -137,6 +138,8 @@ a:hover{
 @media(max-width:768px){
     .hamburger{
         display:block;
+        justify-self:flex-end;
+        margin-right:1em;
     }
     .hamburger.active .bar:nth-child(2){
         opacity:0
@@ -168,8 +171,11 @@ a:hover{
 
 /* Recent Section */
 .recent-section{
-    background:url(asd213.jpg);
+    background:url(arm.jpg);
+    background-color: rgba(0, 0, 0, 0.509);
+    background-blend-mode: multiply;
     background-size:fit-content;
+    background-position: center;
     text-align:center;
     position:relative;
     width:100%;
@@ -203,7 +209,7 @@ a:hover{
     align-items:center;
 }
 .recent-heading{
-    color:black;
+    color:white;
 }
 .recent-background{
 min-height:100%;
