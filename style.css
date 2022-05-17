@@ -216,24 +216,36 @@ width:100%
     width: 80%;
     /* margin:20px auto; */
   }
-  .carousel {
+.carousel {
     border: 2px solid #416be4;
     height: 400px;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     border-radius: 5px;
     background: #fff;
     box-shadow: 0 0 4px rgb(0, 0, 0), 0 4px 10px rgb(0, 0, 0);
   }
-  .slider {
-    border:1px solid red;
+.slider{
     display: flex;
     height: 100%;
     width: 400%;
+    transition:all 0.5s ease-in;
   }
-  .slider>div{
+.slider>div{
     flex-basis:100%;
     display:flex;
     justify-content: center;
     align-items:center;
-  }
+
+}
+.arrow{
+    position:absolute;
+    cursor:pointer;
+    top:50%;
+}
+.left{
+    left:10px;
+}
+.right{
+    right:10px;
+}
