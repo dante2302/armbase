@@ -168,12 +168,12 @@ a:hover{
         margin-right:1em;
     }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity:0
-    }
-
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity:0
     }
 
     .hamburger.active .bar:nth-child(3){
@@ -187,15 +187,17 @@ a:hover{
         overflow:hidden;
         flex-direction: column;
         justify-content:flex-start;
-        position:fixed;
-        left:100%;
-        top:112px;
         gap:1.8em;
+        position:fixed;
+        right:-105%;
+        margin-right:auto;
+        top:112px;
+        z-index:1000;
+        transition:all 0.6s ease-in-out;
         background:linear-gradient(to bottom, var(--black-clr) 70%, var(--grey-clr) 75%)}
 
     nav>ul.active{
-        left:0;
-        z-index:1000;
+        right:0px;
     }
 
     .logo1{
