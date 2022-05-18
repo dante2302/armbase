@@ -55,7 +55,7 @@ a{
     font-size:var(--fs-link);
 }
 
-p, .footer-link {font-size: var(--fs-p)}
+p{font-size: var(--fs-p)}
 
 
 
@@ -295,10 +295,22 @@ a:hover{
 
 /* Footer */
 footer{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
     width:100%;
-    background:var(--black-clr);
+    background:rgba(0, 0, 0,0.95);
+}
+.footer-img{
+    width:180px;
+}
+.footer-link{
+    font-size: calc(var(--fs-link) - .25rem);
 }
 .footer-list{
+    place-self:end;
+    margin:2em;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+    place-content:center;
+    grid-row-gap: 1em;
 }
