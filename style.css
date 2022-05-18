@@ -211,8 +211,8 @@ a:hover{
 
 
 .recent-section{
-    /* background:url(arm.jpg); */
-    background-color: rgba(0, 0, 0);
+    background:url(arm.jpg);
+    background-color: rgba(0, 0, 0,0.7);
     background-blend-mode: multiply;
     background-position: center;
     text-align:center;
@@ -228,9 +228,6 @@ a:hover{
     border-radius:5px;
     color:white;
     line-height:1.5em;
-}
-.footer-img{
-    display:none;
 }
 .container{
 
@@ -294,4 +291,14 @@ a:hover{
 }
 .controls-ul>li.selected{
     background:transparent;
+}
+
+/* Footer */
+footer{
+    width:100%;
+    background:var(--black-clr);
+}
+.footer-list{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
