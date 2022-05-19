@@ -111,9 +111,9 @@ a:hover{
     font-size: var(--fs-link);
     white-space: nowrap;
     font-weight:var(--bold);
-    color:var(--white-clr);
-    border-radius:8px;
-    background:var(--orange-clr);
+    color:linear-gradient(var(--orange-clr),red);
+    border-radius:40px;
+    border:3px solid;
     cursor:pointer;
 
 }
