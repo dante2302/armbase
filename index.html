@@ -63,10 +63,15 @@
         <button>REGISTER</button>
     </section>
     <footer>
-        <form id="newsletter">
-            <h3>Subscribe to our newsletter</h3>
-            <input type="email" name="newsletter-email" id="">
-            <input type="button" value="Subscribe!">
+        <img src="asd.png" alt="" style="width:350px; place-self:start;align-self:end;opacity:.7">
+        <form id="newsletter" method="get">
+            <h3>Subscribe to our newsletter!</h3>
+            <p>Join to get latest news, updates and special offers from <span>armbase.com</span></p>
+            <label for="newsletter-email" style="color:white;">Email:</label>
+            <fieldset id="subscribe-div">
+            <input type="email" name="newsletter-email" id="" value="your-email" class="newsletter-email">
+            <input type="submit" value="Subscribe!"class="newsletter-submit">
+            </fieldset>
         </form>
                 <ul class="footer-list">
             <li><a href="" class="footer-link">About</a></li>
@@ -76,4 +81,11 @@
         </ul>
     </footer>
 </body>
+    <script>
+        const email = document.querySelector('input[type="email"]')
+        email.addEventListener('click',()=>{
+            email.value=""
+            email.style.color="rgb()"
+        },{once:true})
+    </script>
 </html>
