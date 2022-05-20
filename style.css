@@ -46,7 +46,7 @@ ul {list-style: none;}
 body{
     margin:0;
     color:var(--black-clr);
-    font-family: var(--ubuntu);
+    font-family: 'Roboto Condensed';
     min-width:fit-content;
 }
 
