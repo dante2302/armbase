@@ -53,7 +53,7 @@ ul {list-style: none;}
 body{
     margin:0;
     color:var(--black-clr);
-    font-family: 'Roboto Condensed, sans-serif';
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-width:fit-content;
 }
 
@@ -121,9 +121,9 @@ a:hover{
     font-size: var(--fs-link);
     white-space: nowrap;
     font-weight:var(--bold);
-    color:var(--orange-clr);
+    color:white;
     border-radius:40px;
-    border:3px solid;
+    /* border:3px solid var(--orange-clr);  */
     cursor:pointer;
 
 }
