@@ -46,9 +46,6 @@ ul {list-style: none;}
     :root{
         --fs-f-link:.8rem;
     }
-    .big{
-        display:none
-    }
 }
 
 /* Basic Styles */
@@ -175,7 +172,7 @@ a:hover{
     overflow:hidden;
 }
 
-@media(max-width:768px){
+@media(max-width:1024px){
     .hamburger{
         display:block;
         justify-self:flex-end;
