@@ -17,10 +17,10 @@ ul {list-style: none;}
 
 /* Custom properties */
 :root{
-    --black-clr:rgb(0, 0, 0);
+    --black-clr:white;
     --orange-clr : rgb(229, 98, 5);
     --grey-clr:rgb(79,79,79);
-    --white-clr:white;
+    --white-clr:black;
     --red-clr: rgb(156, 29, 20);
     --ubuntu : "Ubuntu", monospace;
     --regular : 400;
@@ -68,7 +68,7 @@ a{
 
 li{text-align:center;}
 
-h3{font-size: var(--fs-h3) ;color : white;}
+h3{font-size: var(--fs-h3) ;color : black;}
 
 
 
@@ -95,7 +95,7 @@ nav>ul{
 }
 
 .logo{       
-    width:12rem;
+    width:10rem;
     margin:.8em 2.2em;
     cursor:pointer;
     transition: all .2s ease-in;
@@ -122,8 +122,8 @@ a:hover{
     white-space: nowrap;
     font-weight:var(--bold);
     color:white;
-    border-radius:40px;
-    /* border:3px solid var(--orange-clr);  */
+    border-radius:10px;
+    background:var(--orange-clr);
     cursor:pointer;
 
 }
@@ -159,7 +159,7 @@ a:hover{
     height:3.2px;
     display:block;
     margin:5px auto;
-    background:white;
+    background:black;
     border-radius:2px;
     transition: all 0.5s ease-in;
     -webkit-transition: all 0.5 ease-in;
@@ -229,7 +229,8 @@ a:hover{
     background-blend-mode: multiply;
     background-position: center;
     text-align:center;
-    width:100%;
+    width:90%;
+    margin: 1em auto;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -243,11 +244,11 @@ a:hover{
     line-height:1.5em;
 }
 .container{
-
     width:80%;
     margin-bottom:2em;
 }
 .carousel{
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.663);
     height: 28rem;
     position: relative;
     overflow: hidden;
