@@ -315,7 +315,6 @@ footer{
     align-items:center;
     grid-template-columns: 1fr 1fr;
     width:90%;
-    grid-template-rows: 1;
 }
 .footer-link{
     font-size: var(--fs-f-link);
@@ -390,4 +389,21 @@ fieldset{
     footer{
         grid-template-columns: repeat(2,1fr);
     }
+}
+.back-to-top{
+    width:2rem;
+    /* display:none; */
+    opacity:0.5;
+    cursor:pointer;
+}
+@media(min-width:768px){
+    .back-to-top{width:4rem;}
+}
+.newsletter-img{
+    width:2.5rem;
+    margin:.5em;
+}
+.news-svg{
+    width:2rem;
+    display:flex;
 }
