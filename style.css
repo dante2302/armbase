@@ -229,7 +229,7 @@ a:hover{
     background-blend-mode: multiply;
     background-position: center;
     text-align:center;
-    width:90%;
+    width: 100%;
     margin: 1em auto;
     display:flex;
     flex-direction:column;
@@ -313,7 +313,7 @@ footer{
     display:grid;
     justify-items:center;
     align-items:center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr .5fr;
     width:90%;
 }
 .footer-link{
@@ -334,8 +334,6 @@ footer{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    border-right:3px solid var(--orange-clr);
-    padding-inline:2em
 }
 .footer-list{
     margin-inline:1.2em;
@@ -349,8 +347,8 @@ footer{
     border:1px solid grey;
     color:black;
     font-weight:bold;
-    font-size:1rem;
-    padding:.5em .9em;
+    font-size:.9rem;
+    padding: -10em 2em;
     border-start-end-radius: 8px;
     border-end-end-radius: 8px;
     background:var(--orange-clr);
@@ -375,20 +373,15 @@ fieldset{
     border-bottom-left-radius: 8px;
     margin:0;
     color:rgba(65, 64, 64, 0.7);
-    padding-left:.4em;
+    padding-left:.5em;
     font-size:1rem;
 }
-#newsletter>p{
-    color:rgba(53, 53, 53, 0.7)
-}
+
 #newsletter>*{
     margin:.65em;
 }
-@media(max-width:900px){
-    .footer-img{display:none;}
-    footer{
-        grid-template-columns: repeat(2,1fr);
-    }
+.join-p{
+    color:black;
 }
 .back-to-top{
     width:2rem;
