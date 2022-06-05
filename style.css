@@ -10,25 +10,33 @@
 
 a{
     text-decoration: none; 
-    color: var(--white-clr);
+    color: var(--lightest-slate);
 }
 
 ul {list-style: none;}
 
 /* Custom properties */
 :root{
-    --black-clr:white;
-    --orange-clr : rgb(229, 98, 5);
-    --grey-clr:rgb(79,79,79);
-    --white-clr:black;
-    --red-clr: rgb(156, 29, 20);
-    --ubuntu : "Ubuntu", monospace;
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --ff-mono : "Space Mono", monospace;
     --regular : 400;
     --bold : 700;
     --italic : italic;
     --fs-h1 : 2.2rem;
     --fs-link : 1.3rem;
-    --fs-f-link : 1rem;
+    --fs-f-link : .8rem;
     --fs-h3 : 1.3rem;
 }
 
@@ -38,7 +46,7 @@ ul {list-style: none;}
 
         --fs-h1 : 3.7rem;
         --fs-link : 1.6rem;
-        --fs-f-link : 1.3rem;
+        --fs-f-link : 1rem;
         --fs-h3 : 1.6rem;
     }
 }
@@ -52,8 +60,8 @@ ul {list-style: none;}
 
 body{
     margin:0;
-    color:var(--black-clr);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:var(--navy);
+    font-family:'Calibri';
     min-width:fit-content;
 }
 
@@ -62,7 +70,7 @@ body{
 h1 {font-size: var(--fs-h1);}
 
 a{
-    font-weight: var(--bold);
+    font-weight: var(--normal);
     font-size:var(--fs-link);
 }
 
@@ -83,8 +91,10 @@ nav,ul{
 }
 
 nav{
+    font-family:var(--ff-mono);
+    letter-spacing:.5;
     width:inherit;
-    background:var(--black-clr)
+    background:var(--navy);
 }
 
 nav>ul{
@@ -113,23 +123,25 @@ a, .sign-up, .cart{
 a:hover{
     transform:scale(1.005);
     border-radius:10px;
-    border-bottom: 3px solid var(--orange-clr);
-    color:var(--orange-clr);
+    border-bottom: 3px solid var(--green);
+    color:var(--green);
 }
 
 .sign-up{
     font-size: var(--fs-link);
     white-space: nowrap;
-    font-weight:var(--bold);
-    color:white;
-    border-radius:10px;
-    background:var(--orange-clr);
+    font-weight:var(--normal);
+    color:var(--green);
+    border: 1px solid var(--green);
+    border-radius:5px;
+    background:transparent;
     cursor:pointer;
 
 }
 
 .sign-up:hover{
-    transform:scale(1.08)
+    background:var(--green);
+    color:var(--navy);
 }
 
 .account{
