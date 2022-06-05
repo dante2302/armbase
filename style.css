@@ -35,7 +35,7 @@ ul {list-style: none;}
     --bold : 700;
     --italic : italic;
     --fs-h1 : 2.2rem;
-    --fs-link : 1.3rem;
+    --fs-link : 1rem;
     --fs-f-link : .8rem;
     --fs-h3 : 1.3rem;
 }
@@ -45,7 +45,7 @@ ul {list-style: none;}
     :root{
 
         --fs-h1 : 3.7rem;
-        --fs-link : 1.6rem;
+        --fs-link : 1.2rem;
         --fs-f-link : 1rem;
         --fs-h3 : 1.6rem;
     }
@@ -91,6 +91,7 @@ nav,ul{
 }
 
 nav{
+    padding:2em;
     font-family:var(--ff-mono);
     letter-spacing:.5;
     width:inherit;
@@ -105,6 +106,7 @@ nav>ul{
 }
 
 .logo{       
+    display:none;
     width:10rem;
     margin:.8em 2.2em;
     cursor:pointer;
@@ -121,9 +123,6 @@ a, .sign-up, .cart{
 }
 
 a:hover{
-    transform:scale(1.005);
-    border-radius:10px;
-    border-bottom: 3px solid var(--green);
     color:var(--green);
 }
 
@@ -135,6 +134,7 @@ a:hover{
     border: 1px solid var(--green);
     border-radius:5px;
     background:transparent;
+    padding:.3em .6em;
     cursor:pointer;
 
 }
@@ -171,7 +171,7 @@ a:hover{
     height:3.2px;
     display:block;
     margin:5px auto;
-    background:black;
+    background:var(--lightest-slate);
     border-radius:2px;
     transition: all 0.5s ease-in;
     -webkit-transition: all 0.5 ease-in;
@@ -217,8 +217,8 @@ a:hover{
         top:120px;
         z-index:1000;
         transition:all 0.5s ease-in-out;
-        background:linear-gradient(to bottom, var(--black-clr) 70%, var(--grey-clr) 75%)}
-
+        background:var(--navy);
+    }
     nav>ul.active{
         right:0px;
     }
