@@ -70,7 +70,7 @@ body{
 h1 {font-size: var(--fs-h1);}
 
 a{
-    font-weight: var(--normal);
+    font-weight: 500;
     font-size:var(--fs-link);
 }
 
@@ -91,10 +91,10 @@ nav,ul{
 }
 
 nav{
-    padding:2em;
-    font-family:var(--ff-mono);
     letter-spacing:.5;
+    font-family:var(--ff-mono);
     width:inherit;
+    padding:2em;
     background:var(--navy);
 }
 
