@@ -122,40 +122,6 @@ a, .sign-up, .cart{
 a:hover{
     color:var(--green);
 }
-
-.sign-up,.log-in{
-    font-size: var(--fs-link);
-    white-space: nowrap;
-    font-weight:var(--normal);
-    border-radius:5px;
-    background:transparent;
-    padding:.3em .6em;
-    cursor:pointer;
-    color:var(--green);
-    border: 1px solid var(--green);
-}
-.sign-up:hover,.log-in:hover{
-    background:var(--green);
-    color:var(--navy);
-}
-
-.account{
-    display:none;
-    width:3.3rem;
-    margin:1rem;
-}
-
-.cart{
-    display:none;
-    width:3rem;
-    background:var(--red-clr);
-    transition: all 0.2s ease-in-out
-}
-
-.cart:hover{
-    background-color: var(--white-clr);
-}
-
 .hamburger{
     display:none;
     cursor: pointer;
@@ -261,6 +227,7 @@ h1:first-of-type{
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    box-shadow: inset 5000px 0 0 rgba(54, 149, 127, 0.309);
 }
 .recent-heading{
     padding:.2em;
